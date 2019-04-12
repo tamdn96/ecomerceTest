@@ -26,6 +26,14 @@
     <%= form.text_field :price %>
   </div>
 
+  <div class="field" style="display: inline-flex;">
+    <label style="margin-right: 10px;">Selling: </label>
+    <%= form.label :selling, 'Yes' %>
+    <%= form.radio_button :selling, 'yes' %>
+    <%= form.label :selling, 'No' %>
+    <%= form.radio_button :selling, 'no' %>
+  </div>
+
   <div class="field">
     <%= form.label :image_url %>
     <%= form.text_field :image_url %>
