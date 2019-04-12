@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>File:</strong>
+  <%= @file_export.file %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @file_export.description %>
+</p>
+
+<%= link_to 'Edit', edit_file_export_path(@file_export) %> |
+<%= link_to 'Back', file_exports_path %>
