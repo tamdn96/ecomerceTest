@@ -63,8 +63,7 @@ class ProductsController < ApplicationController
 
   def remove_all
     Product.delete_all
-    @products = Product.all
-    render :index
+    redirect_to root_path
   end
 
   private
