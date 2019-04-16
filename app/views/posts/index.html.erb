@@ -1,0 +1,7 @@
+<h1>Posts</h1>
+<%= link_to 'Remove All POST', remove_all_posts_path %> |
+<%= link_to 'New post', new_post_path %>
+
+<ol class="microposts">
+  <%= render @posts %>
+</ol>

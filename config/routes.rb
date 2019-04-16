@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   resources :file_exports
+  resources :posts do
+    collection do
+      get 'remove_all'
+    end
+  end
   resources :products do
     collection do
       get 'remove_all'
