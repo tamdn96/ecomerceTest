@@ -61,3 +61,14 @@ p {
   color: #fff;
   text-decoration: none;
 }
+
+.btn-icon {
+  width: 100px;
+  a:hover {
+    background: none;
+    color: blue;
+  }
+  /*span:hover {
+    color: blue;
+  }*/
+}

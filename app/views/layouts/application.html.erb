@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SupportApp</title>
+    <title>RPAのサポート</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "SupportApp RPA", root_path, id: "logo" %>
+        <%= link_to "RPAのサポート", root_path, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "PRODUCT",    root_path %></li>
-            <li><%= link_to "FILE EXPORT",    file_exports_path %></li>
-            <li><%= link_to "POST",    posts_path %></li>
+            <li><%= link_to "製品", root_path %></li>
+            <!-- <li><%#= link_to "FILE EXPORT",    file_exports_path %></li> -->
+            <!-- <li><%#= link_to "POST",    posts_path %></li> -->
           </ul>
         </nav>
       </div>
