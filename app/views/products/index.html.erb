@@ -40,7 +40,7 @@
   </tbody>
 </table>
 <div style="float: right">
-  <span>Showing 1 to 10 of <%= @pagy.count %> entries</span>
+  <span>Showing <%= @pagy.from %> to <%= @pagy.to %> of <%= @pagy.count %> entries</span>
   <%== pagy_nav(@pagy) %>
 </div>
 <br>
