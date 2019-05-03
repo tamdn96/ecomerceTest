@@ -22,7 +22,7 @@
         <td><%= product.name %></td>
         <td><%= product.price %></td>
         <!-- <td><%#= product.selling %></td> -->
-        <td><%= link_to product.code, product.code, style: 'text-overflow: ellipsis; color: #337ab7;max-width: 150px', title: product.code %></td>
+        <td><%= link_to 'もっと見る', product.code, style: 'text-overflow: ellipsis; color: #337ab7;max-width: 150px', title: product.code %></td>
         <td style= 'text-overflow: ellipsis; max-width: 300px'><%= product.description %></td>
         <td class="btn-icon">
           <%= link_to product do %>
@@ -40,6 +40,7 @@
   </tbody>
 </table>
 <div style="float: right">
+  <span>Showing 1 to 10 of <%= @pagy.count %> entries</span>
   <%== pagy_nav(@pagy) %>
 </div>
 <br>
