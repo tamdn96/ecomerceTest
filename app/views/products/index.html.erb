@@ -39,7 +39,9 @@
     <% end %>
   </tbody>
 </table>
-
+<div style="float: right">
+  <%== pagy_nav(@pagy) %>
+</div>
 <br>
 
 <%= link_to 'Remove All Data', remove_all_products_path %> |

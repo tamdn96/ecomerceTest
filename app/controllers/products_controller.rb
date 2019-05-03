@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @pagy, @products = pagy(Product.all, items: 15)
   end
 
   # GET /products/1
