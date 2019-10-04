@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'net_timeout/index'
   resources :file_exports
   resources :posts do
     collection do
